@@ -67,7 +67,7 @@ bookmarksRouter
     })
     .delete((req, res) => {
         const { id } = req.params;
-        const index = store.findIndex(item => item.id === id)
+        const index = store.findIndex(item => item.id == id)
 
         if (index === -1) {
             return res
